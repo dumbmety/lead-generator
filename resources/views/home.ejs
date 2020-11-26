@@ -1,4 +1,38 @@
-<div class="flex py-12">
+<% if (success) { %>
+<div
+  class="bg-green-200 px-6 py-4 my-4 rounded-md text-lg flex items-center justify-between w-full"
+>
+  <div class="flex items-center">
+    <svg viewBox="0 0 24 24" class="text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3">
+      <path
+        fill="currentColor"
+        d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+      ></path>
+    </svg>
+    <span class="text-green-800"
+      >Thank you! You've been successfully added.</span
+    >
+  </div>
+  <a href="/">
+    <svg
+      class="text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </a>
+</div>
+<% } %>
+
+<div class="flex">
   <div id="buttons" class="w-1/2 mr-12 sm:w-2/2">
     <div class="w-full bg-gray-100 rounded-md bg-grey-100 mb-5">
       <div
@@ -58,7 +92,7 @@
         75%
       </div>
     </div>
-    <form class="mb-5">
+    <form action="/subscriber" method="POST" class="mb-5">
       <div class="mb-3">
         <label for="name" class="block">Full name</label>
         <input
@@ -89,30 +123,26 @@
     <hr />
     <h2 class="text-xl mt-5 mb-3">Latest Subscribers</h2>
     <ul>
-      <li class="flex items-center justify-between my-4">
+      <% subscribers.forEach(subscriber => { %>
+      <li
+        class="flex items-center justify-between p-2 rounded-md hover:bg-gray-100"
+      >
         <div class="flex items-center">
           <img
             class="rounded-md mr-3"
-            style="width: 46px; height: 46px"
-            src="/img/user.jpg"
+            style="width: 32px; height: 32px"
+            src="<%= subscriber.gravatar %>"
             alt="Mehdi Neysi"
           />
-          <span class="text-lg">Mehdi Neysi</span>
+          <span class="text-lg"><%= subscriber.name %></span>
         </div>
-        <span class="text-gray-500">42 minutes ago</span>
+        <% if (subscriber.created_at) { %>
+        <span class="text-gray-500">
+          <%= moment(subscriber.created_at).fromNow() %>
+        </span>
+        <% } %>
       </li>
-      <li class="flex items-center justify-between my-4">
-        <div class="flex items-center">
-          <img
-            class="rounded-md mr-3"
-            style="width: 46px; height: 46px"
-            src="/img/user.jpg"
-            alt="Mehdi Neysi"
-          />
-          <span class="text-lg">Mehdi Neysi</span>
-        </div>
-        <span class="text-gray-500">42 minutes ago</span>
-      </li>
+      <% }) %>
     </ul>
   </div>
 </div>

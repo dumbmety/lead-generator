@@ -4,11 +4,21 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const expressLayout = require('express-ejs-layouts')
 const logger = require('morgan')
+const mongoose = require('mongoose')
 
 const webRoutes = require('./routes/web')
 
 const app = express()
 const port = process.env.PORT || 3000
+
+// Datebase Connection
+mongoose.connect('mongodb://localhost/lead-generator', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+const db = mongoose.connection
+db.on('error', console.error.bind(console, 'connection error:'))
+db.once('open', () => console.log("We're connected!"))
 
 // Middlewares
 if (process.env.NODE_ENV === 'development') app.use(logger('dev'))
