@@ -93,11 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var sayHello = function sayHello(name) {
-  console.log("Hello ".concat(name));
-};
 
-sayHello('Mehdi');
 
 /***/ }),
 

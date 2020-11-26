@@ -1,1 +1,118 @@
-<h1>Hello World</h1>
+<div class="flex py-12">
+  <div id="buttons" class="w-1/2 mr-12 sm:w-2/2">
+    <div class="w-full bg-gray-100 rounded-md bg-grey-100 mb-5">
+      <div
+        class="bg-green-500 text-md leading-none py-1 text-center text-white py-2 px-4 rounded-l-md"
+        style="width: 75%"
+      >
+        75%
+      </div>
+    </div>
+    <a
+      target="_blank"
+      href="https://telegram.org"
+      class="flex items-center border border-blue-600 hover:bg-blue-600 text-blue-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-blue mb-5"
+    >
+      <i class="bx bxl-telegram bx-sm mr-3"></i>
+      <span class="text-xl">Join my Telegram Channel</span>
+    </a>
+    <a
+      target="_blank"
+      href="https://youtube.com"
+      class="flex items-center border border-red-600 hover:bg-red-600 text-red-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-red mb-5"
+    >
+      <i class="bx bxl-youtube bx-sm mr-3"></i>
+      <span class="text-xl">Subscribe to my YouTube Channel</span>
+    </a>
+    <a
+      target="_blank"
+      href="https://github.com"
+      class="flex items-center border border-gray-600 hover:bg-gray-600 text-gray-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-gray mb-5"
+    >
+      <i class="bx bxl-github bx-sm mr-3"></i>
+      <span class="text-xl">Follow me on GitHub</span>
+    </a>
+    <a
+      target="_blank"
+      href="https://twitter.com"
+      class="flex items-center border border-blue-500 hover:bg-blue-600 text-blue-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-twitter mb-5"
+    >
+      <i class="bx bxl-twitter bx-sm mr-3"></i>
+      <span class="text-xl">Follow me on Twitter</span>
+    </a>
+    <a
+      target="_blank"
+      href="https://instagram.com"
+      class="flex items-center border border-pink-600 hover:bg-pink-600 text-pink-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-pink mb-5"
+    >
+      <i class="bx bxl-instagram bx-sm mr-3"></i>
+      <span class="text-xl">Follow me on Instagram</span>
+    </a>
+  </div>
+  <div id="subscribe" class="w-1/2 ml-12 sm:w-2/2">
+    <div class="w-full bg-gray-100 rounded-md bg-grey-100 mb-5">
+      <div
+        class="bg-green-500 text-md leading-none py-1 text-center text-white py-2 px-4 rounded-l-md"
+        style="width: 75%"
+      >
+        75%
+      </div>
+    </div>
+    <form class="mb-5">
+      <div class="mb-3">
+        <label for="name" class="block">Full name</label>
+        <input
+          id="name"
+          class="w-full my-2 py-2 px-4 rounded-md border-2 border-gray-300 focus:border-indigo-500"
+          name="name"
+          type="text"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="block">Email address</label>
+        <input
+          id="email"
+          class="w-full my-2 py-2 px-4 rounded-md border-2 border-gray-300 focus:border-indigo-500"
+          name="email"
+          type="email"
+          required
+        />
+      </div>
+      <button
+        type="submit"
+        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      >
+        Join Email List
+      </button>
+    </form>
+    <hr />
+    <h2 class="text-xl mt-5 mb-3">Latest Subscribers</h2>
+    <ul>
+      <li class="flex items-center justify-between my-4">
+        <div class="flex items-center">
+          <img
+            class="rounded-md mr-3"
+            style="width: 46px; height: 46px"
+            src="/img/user.jpg"
+            alt="Mehdi Neysi"
+          />
+          <span class="text-lg">Mehdi Neysi</span>
+        </div>
+        <span class="text-gray-500">42 minutes ago</span>
+      </li>
+      <li class="flex items-center justify-between my-4">
+        <div class="flex items-center">
+          <img
+            class="rounded-md mr-3"
+            style="width: 46px; height: 46px"
+            src="/img/user.jpg"
+            alt="Mehdi Neysi"
+          />
+          <span class="text-lg">Mehdi Neysi</span>
+        </div>
+        <span class="text-gray-500">42 minutes ago</span>
+      </li>
+    </ul>
+  </div>
+</div>
