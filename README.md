@@ -21,7 +21,7 @@
  - [ ] Copy short link
  - [ ] Multilingual (English, Persian, Arabic)
 ## Idea
-This project was started by Mr. [Siavash Mahmoudian](https://github.com/syavash) on January 19, 2019.
+This project was started by @syavash on January 19, 2019.
 Mr. [Siavash Mahmoudian](https://www.youtube.com/c/Syavash) teaches programming on his YouTube channel.
 ## Contributing
 I ask you to participate in this project so that together we can develop this project and increase our knowledge.
