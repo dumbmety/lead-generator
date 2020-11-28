@@ -13,6 +13,7 @@
  - [x] Responsivity with [Semantic UI](https://semantic-ui.com)
  - [x] Validate inputs [yup](https://www.npmjs.com/package/yup)
  - [x] Hash password [bcrypt](https://www.npmjs.com/package/bcrypt)
+ - [x] Custom scrollbar
  - [ ] Show click count of every button
  - [ ] Send email after subscription to thank
  - [ ] Create admin panel
