@@ -1,148 +1,148 @@
-<% if (success) { %>
-<div
-  class="bg-green-200 px-6 py-4 my-4 rounded-md text-lg flex items-center justify-between w-full"
->
-  <div class="flex items-center">
-    <svg viewBox="0 0 24 24" class="text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3">
-      <path
-        fill="currentColor"
-        d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
-      ></path>
-    </svg>
-    <span class="text-green-800"
-      >Thank you! You've been successfully added.</span
-    >
-  </div>
-  <a href="/">
-    <svg
-      class="text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M6 18L18 6M6 6l12 12"
+<header class="main-navigation">
+  <nav class="main-menu menu">
+    <div class="ui container">
+      <img
+        class="ui image image-zoom rounded mini"
+        src="/img/javascript-logo.png"
+        alt="JavaScript Logo"
       />
-    </svg>
-  </a>
-</div>
-<% } %>
+      <h1>JavaScript Tutorial</h1>
+    </div>
+  </nav>
+</header>
 
-<div class="flex">
-  <div id="buttons" class="w-1/2 mr-12 sm:w-2/2">
-    <div class="w-full bg-gray-100 rounded-md bg-grey-100 mb-5">
-      <div
-        class="bg-green-500 text-md leading-none py-1 text-center text-white py-2 px-4 rounded-l-md"
-        style="width: 75%"
-      >
-        75%
-      </div>
-    </div>
-    <a
-      target="_blank"
-      href="https://telegram.org"
-      class="flex items-center border border-blue-600 hover:bg-blue-600 text-blue-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-blue mb-5"
-    >
-      <i class="bx bxl-telegram bx-sm mr-3"></i>
-      <span class="text-xl">Join my Telegram Channel</span>
-    </a>
-    <a
-      target="_blank"
-      href="https://youtube.com"
-      class="flex items-center border border-red-600 hover:bg-red-600 text-red-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-red mb-5"
-    >
-      <i class="bx bxl-youtube bx-sm mr-3"></i>
-      <span class="text-xl">Subscribe to my YouTube Channel</span>
-    </a>
-    <a
-      target="_blank"
-      href="https://github.com"
-      class="flex items-center border border-gray-600 hover:bg-gray-600 text-gray-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-gray mb-5"
-    >
-      <i class="bx bxl-github bx-sm mr-3"></i>
-      <span class="text-xl">Follow me on GitHub</span>
-    </a>
-    <a
-      target="_blank"
-      href="https://twitter.com"
-      class="flex items-center border border-blue-500 hover:bg-blue-600 text-blue-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-twitter mb-5"
-    >
-      <i class="bx bxl-twitter bx-sm mr-3"></i>
-      <span class="text-xl">Follow me on Twitter</span>
-    </a>
-    <a
-      target="_blank"
-      href="https://instagram.com"
-      class="flex items-center border border-pink-600 hover:bg-pink-600 text-pink-600 hover:text-white rounded py-2 px-4 transition duration-300 ease btn-pink mb-5"
-    >
-      <i class="bx bxl-instagram bx-sm mr-3"></i>
-      <span class="text-xl">Follow me on Instagram</span>
-    </a>
+<main class="ui container">
+  <% if (success) { %>
+  <div class="ui positive message">
+    <i class="close icon"></i>
+    <div class="header">Thank you!</div>
+    <p>You've been successfully added.</p>
   </div>
-  <div id="subscribe" class="w-1/2 ml-12 sm:w-2/2">
-    <div class="w-full bg-gray-100 rounded-md bg-grey-100 mb-5">
-      <div
-        class="bg-green-500 text-md leading-none py-1 text-center text-white py-2 px-4 rounded-l-md"
-        style="width: 75%"
-      >
-        75%
-      </div>
-    </div>
-    <form action="/subscriber" method="POST" class="mb-5">
-      <div class="mb-3">
-        <label for="name" class="block">Full name</label>
-        <input
-          id="name"
-          class="w-full my-2 py-2 px-4 rounded-md border-2 border-gray-300 focus:border-indigo-500"
-          name="name"
-          type="text"
-          required
-        />
-      </div>
-      <div class="mb-3">
-        <label for="email" class="block">Email address</label>
-        <input
-          id="email"
-          class="w-full my-2 py-2 px-4 rounded-md border-2 border-gray-300 focus:border-indigo-500"
-          name="email"
-          type="email"
-          required
-        />
-      </div>
-      <button
-        type="submit"
-        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-      >
-        Join Email List
-      </button>
-    </form>
-    <hr />
-    <h2 class="text-xl mt-5 mb-3">Latest Subscribers</h2>
-    <ul>
-      <% subscribers.forEach(subscriber => { %>
-      <li
-        class="flex items-center justify-between p-2 rounded-md hover:bg-gray-100"
-      >
-        <div class="flex items-center">
-          <img
-            class="rounded-md mr-3"
-            style="width: 32px; height: 32px"
-            src="<%= subscriber.gravatar %>"
-            alt="Mehdi Neysi"
-          />
-          <span class="text-lg"><%= subscriber.name %></span>
+  <% } %>
+
+  <div class="ui grid equal width stackable">
+    <div class="column">
+      <h3>Latest Subscribers</h3>
+      <div class="ui progress success" data-percent="35">
+        <div class="bar" style="transition-duration: 300ms; width: 35%">
+          <div class="progress">35%</div>
         </div>
-        <% if (subscriber.created_at) { %>
-        <span class="text-gray-500">
-          <%= moment(subscriber.created_at).fromNow() %>
-        </span>
-        <% } %>
-      </li>
-      <% }) %>
-    </ul>
+      </div>
+
+      <a
+        target="_blank"
+        href="https://telegram.org"
+        class="ui button basic blue fluid big"
+        data-name="telegram"
+      >
+        <i class="telegram plane icon"></i>
+        Join my Telegram Channel
+      </a>
+      <a
+        target="_blank"
+        href="https://youtube.com"
+        class="ui button basic red fluid big"
+        data-name="youtube"
+      >
+        <i class="youtube icon"></i>
+        Subscribe to my YouTube Channel
+      </a>
+      <a
+        target="_blank"
+        href="https://github.com"
+        class="ui button basic black fluid big"
+        data-name="github"
+      >
+        <i class="github icon"></i>
+        Follow me on GitHub
+      </a>
+      <a
+        target="_blank"
+        href="https://twitter.com"
+        class="ui button basic teal fluid big"
+        data-name="twitter"
+      >
+        <i class="twitter icon"></i>
+        Follow me on Twitter
+      </a>
+      <a
+        target="_blank"
+        href="https://instagram.com"
+        class="ui button basic pink fluid big"
+        data-name="instagram"
+      >
+        <i class="instagram icon"></i>
+        Follow me on Instagram
+      </a>
+    </div>
+    <div class="column">
+      <h3>Subscribe Goal: <%= goal %> | So Far: <%= count %></h3>
+      <div class="ui progress success" data-percent="<%= percent %>">
+        <div
+          class="bar"
+          width="<%= percent %>%"
+          style="transition-duration: 300ms"
+        >
+          <div class="progress"><%= percent %>%</div>
+        </div>
+      </div>
+
+      <form class="ui form" action="/subscriber" method="POST">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="e.g. John Doe"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+        <button class="ui button blue fluid large" type="submit">
+          Join Email List
+        </button>
+      </form>
+
+      <hr />
+
+      <h3>Latest Subscribers</h3>
+      <div>
+        <% subscribers.forEach(subscriber => { %>
+        <div class="subscriber">
+          <div class="info">
+            <img
+              class="ui image image-zoom rounded mini"
+              src="<%= subscriber.gravatar %>"
+              alt="<%= subscriber.name %>"
+            />
+            <span><%= subscriber.name %></span>
+          </div>
+          <span class="time">
+            <%= moment(subscriber.created_at).fromNow() %>
+          </span>
+        </div>
+        <% }) %>
+      </div>
+    </div>
   </div>
-</div>
+</main>

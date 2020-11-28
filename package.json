@@ -12,12 +12,15 @@
     "watch": "yarn development -- --watch"
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
     "gravatar": "^1.8.1",
+    "medium-zoom": "^1.0.6",
     "moment": "^2.29.1",
     "mongoose": "^5.10.15",
     "mongoose-timestamps": "^0.0.1",

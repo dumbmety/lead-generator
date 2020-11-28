@@ -4,7 +4,10 @@ const moment = require('moment')
 const Subscriber = require('../models/subscriber')
 
 exports.index = async (req, res) => {
-  const subscribers = await Subscriber.find().sort({ _id: -1 })
+  const subscriberGoal = 100
+  const count = await Subscriber.count()
+  const subscribers = await Subscriber.find().sort({ _id: -1 }).limit(25)
+  const percent = Math.round((count / subscriberGoal) * 100)
   const { success } = req.query
 
   subscribers.forEach(subscriber => {
@@ -16,5 +19,12 @@ exports.index = async (req, res) => {
     subscriber.gravatar = gravatar.url(subscriber.email)
   })
 
-  res.render('home', { subscribers, success, moment })
+  res.render('home', {
+    count,
+    goal: subscriberGoal,
+    moment,
+    percent,
+    subscribers,
+    success
+  })
 }

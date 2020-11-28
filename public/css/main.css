@@ -21,8 +21,9 @@
 body {
   color: #232323;
   scroll-behavior: smooth;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background: #f8f8f8;
 }
 
 button,
@@ -30,127 +31,13 @@ input {
   outline: none !important;
 }
 
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid #e5e7eb;
+}
+
 #event {
   background: #f8f8f8;
-}
-
-.btn-blue:hover {
-  background: #0088CC;
-}
-
-.btn-red:hover {
-  background: #c4302b;
-}
-
-.btn-gray:hover {
-  background: #211f1f;
-}
-
-.btn-twitter:hover {
-  background: #00acee;
-}
-
-.btn-pink:hover {
-  background: #DD2A7B;
-}
-
-.btn-blue:focus {
-  box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.6);
-}
-
-.btn-red:focus {
-  box-shadow: 0 0 0 3px rgba(196, 48, 43, 0.6);
-}
-
-.btn-gray:focus {
-  box-shadow: 0 0 0 3px rgba(33, 31, 31, 0.6);
-}
-
-.btn-twitter:focus {
-  box-shadow: 0 0 0 3px rgba(0, 172, 238, 0.6);
-}
-
-.btn-pink:focus {
-  box-shadow: 0 0 0 3px rgba(221, 42, 123, 0.6);
-}
-
-.border-blue-600 {
-  border-color: #0088CC;
-}
-
-.bg-blue-600 {
-  background-color: #0088CC;
-}
-
-.text-blue-600 {
-  color: #0088CC;
-}
-
-.border-red-600 {
-  border-color: #c4302b;
-}
-
-.bg-red-600 {
-  background-color: #c4302b;
-}
-
-.text-red-600 {
-  color: #c4302b;
-}
-
-.border-gray-600 {
-  border-color: #211f1f;
-}
-
-.bg-gray-600 {
-  background-color: #211f1f;
-}
-
-.text-gray-600 {
-  color: #211f1f;
-}
-
-.border-blue-500 {
-  border-color: #00acee;
-}
-
-.bg-blue-500 {
-  background-color: #00acee;
-}
-
-.text-blue-500 {
-  color: #00acee;
-}
-
-.border-pink-600 {
-  border-color: #DD2A7B;
-}
-
-.bg-pink-600 {
-  background-color: #DD2A7B;
-}
-
-.text-pink-600 {
-  color: #DD2A7B;
-}
-
-.add-to-cart {
-  color: #10B981;
-  border: 2px solid #10B981;
-  transition: all 0.3s ease;
-}
-
-.add-to-cart:hover {
-  color: #ffffff;
-  background: #10B981;
-}
-
-.amount {
-  color: #10B981;
-}
-
-.box-shadow {
-  box-shadow: 0 0 7px 0 #eaeff4;
 }
 
 #header nav ul li a {
@@ -174,5 +61,77 @@ input {
 
 #header nav ul li:last-child a:hover {
   background: #059669;
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+.main-menu {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.main-menu > div {
+  display: flex !important;
+  align-items: center;
+}
+
+.main-menu > div h1 {
+  margin-top: 0;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.main-menu > div img {
+  margin-right: 1rem;
+}
+
+.main-menu.menu {
+  margin: 0;
+  border-top: 0;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+  min-height: 51px;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.ui.button {
+  margin-bottom: 0.8rem;
+}
+
+.subscriber {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.subscriber:hover {
+  background: #f3f4f6;
+}
+
+.subscriber .info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.subscriber .info span {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.subscriber .time {
+  text-align: right;
+  flex: 1;
+  color: #6b7280;
 }
 

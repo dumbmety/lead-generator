@@ -7,6 +7,7 @@ const logger = require('morgan')
 const mongoose = require('mongoose')
 
 const webRoutes = require('./routes/web')
+const apiRoutes = require('./routes/api')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -22,6 +23,7 @@ db.once('open', () => console.log("We're connected!"))
 
 // Middlewares
 if (process.env.NODE_ENV === 'development') app.use(logger('dev'))
+app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
@@ -31,6 +33,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'resources', 'views'))
 
 // Routes
+app.use(apiRoutes)
 app.use(webRoutes)
 
 app.listen(port, () =>
