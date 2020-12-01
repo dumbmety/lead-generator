@@ -11,9 +11,9 @@
  - [x] Cut surname of subscribers
  - [x] Set share goal and Show count share so far
  - [x] Responsivity with [Semantic UI](https://semantic-ui.com)
- - [x] Validate inputs [yup](https://www.npmjs.com/package/yup)
  - [x] Hash password [bcrypt](https://www.npmjs.com/package/bcrypt)
  - [x] Custom scrollbar
+ - [ ] Validate inputs [yup](https://www.npmjs.com/package/yup)
  - [ ] Show click count of every button
  - [ ] Send email after subscription to thank
  - [ ] Create admin panel
