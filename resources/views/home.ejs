@@ -20,12 +20,16 @@
   </div>
   <% } %>
 
+    <div class="ui violet massive message">
+      <h1 id="countdown"></h1>
+    </div>
+
   <div class="ui grid equal width stackable">
     <div class="column">
-      <h3>Latest Subscribers</h3>
-      <div class="ui progress success" data-percent="35">
+      <h3>Subscribe Goal: <%= shareGoal %> | So Far: <%= totalClicks %></h3>
+      <div class="ui progress success" data-percent="<%= sharePercent %>">
         <div class="bar" style="transition-duration: 300ms; width: 35%">
-          <div class="progress">35%</div>
+          <div class="progress"><%= sharePercent %>%</div>
         </div>
       </div>
 
@@ -37,6 +41,8 @@
       >
         <i class="telegram plane icon"></i>
         Join my Telegram Channel
+
+        <span class="badge badge-blue"><%= clicks.telegram || 0 %></span>
       </a>
       <a
         target="_blank"
@@ -45,7 +51,9 @@
         data-name="youtube"
       >
         <i class="youtube icon"></i>
-        Subscribe to my YouTube Channel
+        Subscribe to my YouTube
+
+        <span class="badge badge-red"><%= clicks.youtube || 0 %></span>
       </a>
       <a
         target="_blank"
@@ -55,6 +63,8 @@
       >
         <i class="github icon"></i>
         Follow me on GitHub
+
+        <span class="badge badge-black"><%= clicks.github || 0 %></span>
       </a>
       <a
         target="_blank"
@@ -64,6 +74,8 @@
       >
         <i class="twitter icon"></i>
         Follow me on Twitter
+
+        <span class="badge badge-teal"><%= clicks.twitter || 0 %></span>
       </a>
       <a
         target="_blank"
@@ -73,17 +85,19 @@
       >
         <i class="instagram icon"></i>
         Follow me on Instagram
+
+        <span class="badge badge-pink"><%= clicks.instagram || 0 %></span>
       </a>
     </div>
     <div class="column">
-      <h3>Subscribe Goal: <%= goal %> | So Far: <%= count %></h3>
-      <div class="ui progress success" data-percent="<%= percent %>">
+      <h3>Subscribe Goal: <%= subscriberGoal %> | So Far: <%= count %></h3>
+      <div class="ui progress success" data-percent="<%= subscriberPercent %>">
         <div
           class="bar"
-          width="<%= percent %>%"
+          width="<%= subscriberPercent %>%"
           style="transition-duration: 300ms"
         >
-          <div class="progress"><%= percent %>%</div>
+          <div class="progress"><%= subscriberPercent %>%</div>
         </div>
       </div>
 
@@ -146,3 +160,8 @@
     </div>
   </div>
 </main>
+
+<script>
+  // Countdown
+
+</script>

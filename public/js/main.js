@@ -2772,17 +2772,32 @@ Object(medium_zoom__WEBPACK_IMPORTED_MODULE_0__["default"])('.image-zoom', {
   scrollOffset: 60
 }); // Close Message
 
-if (closeMessageButton) closeMessageButton.addEventListener('click', function () {
-  return window.location.href = '/';
-}); // Count Buttons
+if (closeMessageButton) {
+  closeMessageButton.addEventListener('click', function () {
+    return window.location.href = '/';
+  });
+} // Count Buttons
+
 
 socialButtons.forEach(function (btn) {
   btn.onclick = function () {
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('http://localhost:3000/api/v1/counts', {
-      name: btn.dataset.name
+    $.ajax({
+      method: 'POST',
+      url: '/api/v1/counts',
+      data: {
+        name: btn.dataset.name
+      }
+    }).done(function (msg) {
+      $('a[data-name="' + msg.name + '"] .badge').html(msg.count);
     });
   };
-});
+}); // CountDown
+
+setInterval(function () {
+  var duration = moment('2021-03-01 17:00:00') - moment();
+  var d = moment.duration(duration);
+  document.querySelector('#countdown').innerHTML = "".concat(d.days(), " days and ").concat(d.hours(), " : ").concat(d.minutes(), " : ").concat(d.seconds());
+}, 1000);
 
 /***/ }),
 

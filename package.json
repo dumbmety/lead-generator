@@ -1,41 +1,42 @@
 {
-  "name": "lead-generator",
-  "version": "1.0.0",
-  "main": "app.js",
-  "author": "Mehdi Neysi",
-  "license": "MIT",
-  "scripts": {
-    "prod": "cross-env NODE_ENV=production node app.js",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "dev": "cross-env NODE_ENV=development nodemon app.js",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "yarn development -- --watch"
-  },
-  "dependencies": {
-    "axios": "^0.21.0",
-    "bcrypt": "^5.0.0",
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.0",
-    "gravatar": "^1.8.1",
-    "medium-zoom": "^1.0.6",
-    "moment": "^2.29.1",
-    "mongoose": "^5.10.15",
-    "mongoose-timestamps": "^0.0.1",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "@types/node": "^14.14.9",
-    "cross-env": "^7.0.2",
-    "eslint": "^7.14.0",
-    "laravel-mix": "^5.0.9",
-    "nodemon": "^2.0.6",
-    "prettier": "^2.2.0",
-    "resolve-url-loader": "^3.1.0",
-    "sass": "^1.29.0",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.12"
-  }
+    "name": "lead-generator",
+    "version": "1.0.0",
+    "main": "app.js",
+    "author": "Mehdi Neysi",
+    "license": "MIT",
+    "scripts": {
+        "prod": "cross-env NODE_ENV=production node app.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "dev": "cross-env NODE_ENV=development nodemon app.js",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "yarn development -- --watch"
+    },
+    "dependencies": {
+        "@types/mongoose": "^5.10.2",
+        "axios": "^0.21.0",
+        "bcrypt": "^5.0.0",
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "express-ejs-layouts": "^2.5.0",
+        "gravatar": "^1.8.1",
+        "medium-zoom": "^1.0.6",
+        "moment": "^2.29.1",
+        "mongoose": "^5.10.15",
+        "mongoose-timestamps": "^0.0.1",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.9",
+        "cross-env": "^7.0.3",
+        "eslint": "^7.14.0",
+        "laravel-mix": "^5.0.9",
+        "nodemon": "^2.0.6",
+        "prettier": "^2.2.0",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.29.0",
+        "sass-loader": "^8.0.2",
+        "vue-template-compiler": "^2.6.12"
+    }
 }

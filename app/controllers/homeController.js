@@ -1,30 +1,54 @@
-const gravatar = require('gravatar')
-const moment = require('moment')
+const gravatar = require('gravatar');
+const moment = require('moment');
 
-const Subscriber = require('../models/subscriber')
+const Subscriber = require('../models/subscriber');
+const Count = require('../models/counts');
 
 exports.index = async (req, res) => {
-  const subscriberGoal = 100
-  const count = await Subscriber.count()
-  const subscribers = await Subscriber.find().sort({ _id: -1 }).limit(25)
-  const percent = Math.round((count / subscriberGoal) * 100)
-  const { success } = req.query
+    const { success } = req.query;
 
-  subscribers.forEach(subscriber => {
-    const nameParts = subscriber.name.split(' ')
-    let name = nameParts[0]
-    if (nameParts[1]) name += ` ${nameParts[1][0]}.`
+    const count = await Subscriber.count();
+    const subscribers = await Subscriber.find().sort({ _id: -1 }).limit(25);
 
-    subscriber.name = name
-    subscriber.gravatar = gravatar.url(subscriber.email)
-  })
+    const clickCounts = await Count.find({});
 
-  res.render('home', {
-    count,
-    goal: subscriberGoal,
-    moment,
-    percent,
-    subscribers,
-    success
-  })
-}
+    let totalClicks = 0;
+    const clicks = {};
+    clickCounts.forEach(clickCount => {
+        totalClicks += clickCount.count;
+        clicks[clickCount.name] = clickCount.count;
+    });
+
+    const deadline = '2021-03-01 17:00:00';
+
+    // Goals
+    const subscriberGoal = 100;
+    const shareGoal = 100;
+
+    // Percent
+    const subscriberPercent = Math.round((count / subscriberGoal) * 100);
+    const sharePercent = Math.round((totalClicks / shareGoal) * 100);
+
+    subscribers.forEach(subscriber => {
+        const nameParts = subscriber.name.split(' ');
+        let name = nameParts[0];
+        if (nameParts[1]) name += ` ${nameParts[1][0]}.`;
+
+        subscriber.name = name;
+        subscriber.gravatar = gravatar.url(subscriber.email);
+    });
+
+    res.render('home', {
+        clicks,
+        count,
+        deadline,
+        moment,
+        shareGoal,
+        sharePercent,
+        subscriberGoal,
+        subscriberPercent,
+        subscribers,
+        success,
+        totalClicks
+    });
+};

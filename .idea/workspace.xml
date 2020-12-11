@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="91ff6a26-3499-47b3-9868-a369ec08e29e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/countsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/countsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/homeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/homeController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/subscriberController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/subscriberController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/counts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/counts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/subscriber.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/subscriber.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/base.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/components.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/layout.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/layout.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lVIjtIjkdDr7P0IRGWcOOJ6B97" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.6.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.6.0" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Mehdi\Desktop\lead-generator\node_modules\prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91ff6a26-3499-47b3-9868-a369ec08e29e" name="Default Changelist" comment="" />
+      <created>1607675993644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607675993644</updated>
+      <workItem from="1607676012999" duration="932000" />
+      <workItem from="1607678149339" duration="378000" />
+      <workItem from="1607697758383" duration="19412000" />
+      <workItem from="1607724678543" duration="868000" />
+      <workItem from="1607725676190" duration="1154000" />
+      <workItem from="1607727184144" duration="96000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="547" y="263" key="#ESLint" timestamp="1607721747934">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="547" y="263" key="#ESLint/0.0.1366.768@0.0.1366.768" timestamp="1607721747934" />
+    <state x="309" y="62" key="#Inspections" timestamp="1607720839608">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="309" y="62" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1607720839608" />
+    <state x="439" y="204" key="#Notifications" timestamp="1607725543667">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="439" y="204" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1607725543667" />
+    <state x="275" y="25" key="#Plugins" timestamp="1607678054785">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="25" key="#Plugins/0.0.1366.768@0.0.1366.768" timestamp="1607678054785" />
+    <state x="416" y="237" key="#Prettier" timestamp="1607698797704">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="416" y="237" key="#Prettier/0.0.1366.768@0.0.1366.768" timestamp="1607698797704" />
+    <state x="187" y="212" key="#Template_Data_Languages" timestamp="1607700443417">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="187" y="212" key="#Template_Data_Languages/0.0.1366.768@0.0.1366.768" timestamp="1607700443417" />
+    <state width="1366" height="224" key="GridCell.Tab.0.bottom" timestamp="1607725933095">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1607725933095" />
+    <state width="1366" height="224" key="GridCell.Tab.0.center" timestamp="1607725933095">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1607725933095" />
+    <state width="1366" height="224" key="GridCell.Tab.0.left" timestamp="1607725933095">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1607725933095" />
+    <state width="1366" height="224" key="GridCell.Tab.0.right" timestamp="1607725933095">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1607725933095" />
+    <state x="368" y="37" key="SettingsEditor" timestamp="1607699244600">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="368" y="37" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1607699244600" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1607726093783">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1607726093783" />
+  </component>
+</project>

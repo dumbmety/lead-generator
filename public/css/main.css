@@ -40,6 +40,37 @@ hr {
   background: #f8f8f8;
 }
 
+.badge {
+  float: right;
+  color: #ffffff;
+  padding: 0.15em 0.35em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 2px;
+}
+
+.badge-blue {
+  background: #2185d0;
+}
+
+.badge-red {
+  background: #db2828;
+}
+
+.badge-black {
+  background: #1b1c1d;
+}
+
+.badge-teal {
+  background: #00b5ad;
+}
+
+.badge-pink {
+  background: #e03997;
+}
+
 #header nav ul li a {
   cursor: pointer;
   -webkit-user-select: none;
@@ -106,6 +137,11 @@ main {
 
 .ui.button {
   margin-bottom: 0.8rem;
+}
+
+.ui.button .badge {
+  position: relative;
+  transform: translateY(-15%);
 }
 
 .subscriber {
