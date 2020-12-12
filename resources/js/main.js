@@ -1,5 +1,5 @@
 import mediumZoom from 'medium-zoom';
-import axios from 'axios';
+import countdown from 'countdown';
 
 const closeMessageButton = document.querySelector('.message .close');
 const socialButtons = document.querySelectorAll('a.ui.button.basic');
@@ -33,9 +33,8 @@ socialButtons.forEach(btn => {
 
 // CountDown
 setInterval(() => {
-    const duration = moment('2021-03-01 17:00:00') - moment();
-    const d = moment.duration(duration);
-    document.querySelector(
-        '#countdown'
-    ).innerHTML = `${d.days()} days and ${d.hours()} : ${d.minutes()} : ${d.seconds()}`;
+    const element = document.querySelector('#countdown');
+    const deadline = new Date('2021-03-01 17:00:00');
+
+    element.innerHTML = countdown(deadline).toString();
 }, 1000);

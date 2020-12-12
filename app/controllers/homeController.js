@@ -19,8 +19,6 @@ exports.index = async (req, res) => {
         clicks[clickCount.name] = clickCount.count;
     });
 
-    const deadline = '2021-03-01 17:00:00';
-
     // Goals
     const subscriberGoal = 100;
     const shareGoal = 100;
@@ -29,6 +27,7 @@ exports.index = async (req, res) => {
     const subscriberPercent = Math.round((count / subscriberGoal) * 100);
     const sharePercent = Math.round((totalClicks / shareGoal) * 100);
 
+    // Subscribers
     subscribers.forEach(subscriber => {
         const nameParts = subscriber.name.split(' ');
         let name = nameParts[0];
@@ -41,7 +40,6 @@ exports.index = async (req, res) => {
     res.render('home', {
         clicks,
         count,
-        deadline,
         moment,
         shareGoal,
         sharePercent,
