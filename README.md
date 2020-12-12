@@ -16,7 +16,7 @@
 -   [x] Hash password [bcrypt](https://www.npmjs.com/package/bcrypt)
 -   [x] Custom scrollbar
 -   [x] Show click count of every button
--   [x] CountDown [demo]
+-   [x] CountDown
 -   [ ] Validate inputs [yup](https://www.npmjs.com/package/yup)
 -   [ ] Send email after subscription to thank
 -   [ ] Join users to telegram bot
