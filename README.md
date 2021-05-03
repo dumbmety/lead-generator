@@ -34,6 +34,6 @@ Mr. [Siavash Mahmoudian](https://www.youtube.com/c/Syavash) teaches programming 
 
 I ask you to participate in this project so that together we can develop this project and increase our knowledge.
 
--   Email: [mehdineysi@outlook.com](mailto:mehdineysi@outlook.com)
--   Instagram: [@neysi.dev](https://instagram.com/neysi.dev)
--   Twitter: [@dev_mehdineysi](https://twitter.com/dev_mehdineysi)
+-   Email: [dev.mehdineysi@gmail.com](mailto:dev.mehdineysi@gmail.com)
+-   Instagram: [@neysidev](https://instagram.com/neysidev)
+-   Twitter: [@neysidev](https://twitter.com/neysidev)
